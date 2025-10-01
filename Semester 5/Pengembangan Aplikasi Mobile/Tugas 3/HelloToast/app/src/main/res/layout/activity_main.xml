@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_label_browser"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/button_toast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#6200EE"
-        android:text="@string/toast" />
+        android:text="@string/button_label_toast" />
 
     <TextView
         android:id="@+id/show_count"
@@ -20,13 +28,21 @@
         android:layout_weight="1"
         android:background="#FFFF00"
         android:gravity="center"
-        android:text="@string/_0"
+        android:text="@string/count_initial_value"
         android:textSize="160sp"
         android:textStyle="bold" />
+
     <Button
         android:id="@+id/button_count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#6200EE"
-        android:text="@string/count" />
+        android:text="@string/button_label_count" />
+
+    <Button
+        android:id="@+id/button_switchpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_label_pindah" />
+
 </LinearLayout>
